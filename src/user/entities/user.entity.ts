@@ -68,10 +68,10 @@ export class User {
   isAdmin: boolean;
 
   @CreateDateColumn()
-  createTime: number;
+  createTime: Date;
 
   @UpdateDateColumn()
-  updateTime: number;
+  updateTime: Date;
 
   @ManyToMany(() => Role)
   @JoinTable({
